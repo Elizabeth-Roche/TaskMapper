@@ -1,6 +1,7 @@
-'use strict';
-var React = require('react-native');
-var { StyleSheet } = React;
+import React, { Component } from 'react'
+import {
+  StyleSheet,
+} from 'react-native'
 
 var styles = StyleSheet.create({
   container: {
@@ -8,7 +9,6 @@ var styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
-
   button: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -30,44 +30,41 @@ var styles = StyleSheet.create({
     color: 'green',
     fontSize: 30
   },
-
   map: {
     flex: 2,
     marginBottom: 20
   },
-    newButton: {
-      justifyContent: 'center',
-      alignItems: 'center',
-      borderColor: 'green',
-      borderWidth: 1,
-      borderRadius: 3,
-      marginTop: 0,
-      padding: 2,
-      height: 200
-    },
-    buttonText: {
-      flex: 1,
-      alignSelf: 'center'
-    },
-    footer: {
-      flex: 1,
-      marginTop: 200
-    },
-    button: {
-
+  newButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderColor: 'green',
+    borderWidth: 1,
+    borderRadius: 3,
+    marginTop: 0,
+    padding: 2,
+    height: 200
+  },
+  buttonText: {
+    flex: 1,
+    alignSelf: 'center'
+  },
+  footer: {
+    flex: 1,
+    marginTop: 200
+  },
+  button: {
     justifyContent: 'center',
     alignItems: 'center',
     borderColor: 'red',
     borderWidth: 1,
     borderRadius: 3,
     marginTop: 5,
-    padding: 2
+    padding: 2,
   },
   listView: {
     flex: 2,
-    marginTop: 20
-  }
+    marginTop: 20,
+  },
+})
 
-});
-
-module.exports = styles;
+module.exports = styles

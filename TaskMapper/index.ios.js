@@ -1,28 +1,28 @@
+import React, { Component } from 'react'
+import {
+  AppRegistry,
+  MapView,
+  NavigatorIOS,
+  StyleSheet,
+} from 'react-native'
 
-'use strict';
+var ListContainer = require('./src/components/list/ListContainer')
 
-var ListContainer = require('./src/components/list/ListContainer');
-
-
-var React = require('react-native');
-var { AppRegistry, MapView, NavigatorIOS, StyleSheet } = React;
-
-var TaskMapper = React.createClass({
+class TaskMapper extends React.Component {
   render() {
-        return (
-
-            <NavigatorIOS
-                style={styles.navigator}
-                initialRoute={{component: ListContainer, title: 'Task Mapper'}}/>
-
-        );
-    }
-});
+    return (
+      <NavigatorIOS
+        style={styles.navigator}
+        initialRoute={{component: ListContainer, title: 'Task Mapper'}}
+      />
+    )
+  }
+}
 
 var styles = StyleSheet.create({
   navigator: {
     flex: 1,
-  }
+  },
 })
 
-AppRegistry.registerComponent('TaskMapper', () => TaskMapper);
+AppRegistry.registerComponent('TaskMapper', () => TaskMapper)
